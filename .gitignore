@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+venv/
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# Experiment artifacts (also excluded from sync.sh)
+experiments/*/out/
+outputs/
+results/
+data/
+checkpoints/
+wandb/
+slurm_logs/
+
+# Sync provenance stamp: rewritten by every ./sync.sh run. Generated, never
+# authored — it is NOT in sync.sh's excludes, so the cluster copy still gets it.
+.sync_meta
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/
+
+# Secrets
+.env
